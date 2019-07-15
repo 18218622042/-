@@ -2,18 +2,18 @@
 require __DIR__ . "/qcloudsms_php/src/index.php";
 // use qcloudsms_php\src\SmsMultiSender;
 use Qcloud\Sms\SmsSingleSender;
-$appid=1400199656;
-$appkey="f9f8f92884dce1c99a4928cd07c17690";
+$appid=appid;
+$appkey=appkey;
 
-$smsSign="灵犀出行";
+$smsSign="***";
 $openid=$_GET['openid'];
 $mode=$_GET['mode'];
 if($mode==1){$templateId=312627;}
 else{$templateId=329372;}
 $ip ="localhost";
 $dbuser="root";  //数据库初始用户名和密码
-$psw="lxcs123";  
-$database="lx_information";
+$psw="数据库密码";  
+$database="表名";
 
 $con=mysqli_connect($ip,$dbuser,$psw,$database);
 if (mysqli_connect_errno($con)) 
